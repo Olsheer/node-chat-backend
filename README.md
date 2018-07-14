@@ -1,4 +1,7 @@
 # Запуск
+- npm install
+- (sudo) mongod
+- npm start
 # Users 
 - GET "/users" - повертає всіх користувачів
 - GET "/users/:id" - повертає користувача з даним id
