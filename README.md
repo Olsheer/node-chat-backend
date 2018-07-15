@@ -4,11 +4,13 @@
 - (sudo) mongod
 - npm start
 ```
+# Start page
+- GET `/` початкова сторінка
 # Users 
-- GET `/users` - повертає всіх користувачів
-- GET `/users/:id` - повертає користувача з даним id
-- DELETE `/users/:id` - видаляє користувача з даним id
-- POST `/users` - додає користувача. Приклад body:
+- GET `api/users` - повертає всіх користувачів
+- GET `api/users/:id` - повертає користувача з даним id
+- DELETE `api/users/:id` - видаляє користувача з даним id
+- POST `api/users` - додає користувача. Приклад body:
 ```
     {
         "name": "Duke",
@@ -16,7 +18,7 @@
         "phone": "2222-320"
     }
   ```
-- PUT `/users/:id` - оновлює користувача з даним id. Приклад body:
+- PUT `api/users/:id` - оновлює користувача з даним id. Приклад body:
    ```
    {
         "name": "Robin",
@@ -26,10 +28,10 @@
     ```
 
 # Messages 
-- GET `/messages` - повертає всі повідомлення
-- GET `/messages/:id` - повертає повідомлення з даним id
-- DELETE `/messages/:id` - видаляє повідомлення з даним id
-- POST `/messages` - додає повідомлення. Приклад body:
+- GET `api/messages` - повертає всі повідомлення
+- GET `api/messages/:id` - повертає повідомлення з даним id
+- DELETE `api/messages/:id` - видаляє повідомлення з даним id
+- POST `api/messages` - додає повідомлення. Приклад body:
 ```
     {
         "senderId": "5b48b2f6a414dc7d56656b6a",
@@ -37,7 +39,7 @@
         "text": "Hello, how are you?"
     }
 ```
-- PUT `/messages/:id` - оновлює повідомлення з даним id. Приклад body:
+- PUT `api/messages/:id` - оновлює повідомлення з даним id. Приклад body:
    ```
    {
         "senderId": "5b48b2f6a414dc7d56656b6a",
